@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Lampara</title>
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="">Novedades</a></li>
+                <li><a href="">Moderno</a></li>
+                <li><a href="">Barato</a></li>
+                <li><a href="">Contemporaneo</a></li>
+            </ul>
+            <button type="button" onclick="clickBtn()" id="btn"><span></span></button>
+        </nav>
+        <div class="lamp-container">
+
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light" id="light">
+        </div>
+        <div class="text-container">
+            <h1>Lo último<br>en iluminación!</h1>
+            <p>Todo en materiales electricos e iluminacion. Decoracion de interior y exterior</p>
+            <p>Por consultas: 0303456 o 0303456</p>
+            <a href="https://www.instagram.com/suelectric/?hl=es" target="blank">Nuestros Productos!</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById("btn")
+        var light = document.getElementById("light")
+
+        function clickBtn() {
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+    </script>
+</body>
+
+</html>
